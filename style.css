@@ -1,0 +1,166 @@
+:root {
+    --red: rgb(246, 50, 50);
+    --orange: rgb(254, 182, 20);
+    --gray: rgb(244, 244, 244);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: var(--red);
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header h1 {
+    display: inline-block;
+    border: 8px solid white;
+    padding: .5rem;
+    border-radius: 50px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner h2 {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    background: var(--orange);
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.banner span {
+    font-size: 5rem;
+}
+
+nav {
+    background: var(--gray);
+    padding: 1rem;
+    position: sticky;
+    top: 105px;
+}
+
+/* nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+} */
+
+nav ul {    
+    white-space: nowrap;
+    text-align: center;
+}   
+
+nav ul li {
+    display: inline-block;
+    width: 25%;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+nav .active {
+    color: var(--red)
+}
+
+main article {
+    margin-top: 75px;
+    margin-bottom: 150px;
+    padding: 2rem;
+}
+
+main h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--red);
+}
+
+p {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+main ul {
+    white-space: nowrap;
+}
+
+main ul li {
+    display: inline-block;
+    padding: 1rem;
+    width: 50%;
+}
+
+
+main ul li img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+main ul li img:hover {
+    transform: scale(1.1);
+}
+
+.join {
+    background: var(--gray);
+    padding: 2rem;
+    text-align: center;
+}
+
+.join h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 1rem;
+}
+
+.join input[type="email"] {
+    border: 0;
+    outline: 0;
+    font-size: 1.25rem;
+    height: 50px;
+    border-radius: 50px;
+    padding: .25rem;
+    width: 25%;
+    text-indent: 1rem;
+}
+
+footer {
+    background: var(--red);
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
